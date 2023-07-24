@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-20.04, ubuntu-22.04]
-        nginx-rel: [mainline, stable]
+        nginx-rel: [mainline, stable, 1.24.0, 1.24, 1.25.0 1.25]
     steps:
       - name: checkout otel nginx
         uses: actions/checkout@v3
